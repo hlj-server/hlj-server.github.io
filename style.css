@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+i {
+  font-style: normal;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  background: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg) center center, #000e;
+  background-size: cover;
+  color: #fff;
+  font-family: sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+header {
+  width: 84%;
+  height: 50px;
+  margin: 20px 8% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  word-break: keep-all;
+}
+header a {
+  transition: 0.6s;
+  box-shadow: 0 4px 16px #0001;
+  font-weight: bold;
+  background-color: #fff4;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+header a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+header .left {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 19pt;
+  font-weight: bold;
+  padding: 0 18px;
+  width: auto;
+  border-radius: 5px;
+}
+header .left img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 470px) {
+  header .left i {
+    display: none;
+  }
+  header .left img {
+    margin: 0;
+  }
+}
+header .right {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+header .right a {
+  height: 40px;
+  padding: 0 1.5em;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16pt;
+}
+@media screen and (max-width: 712px) {
+  header .right .hidden {
+    display: none;
+  }
+}
+section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+section > * {
+  padding: 0 24px;
+}
+section .title {
+  font-size: clamp(25pt, 8vw, 40pt);
+  font-weight: bolder;
+  word-break: keep-all;
+}
+section .describe {
+  font-size: 12pt;
+  color: #fffb;
+}
+section .tip {
+  margin-top: 32px;
+  font-size: clamp(16pt, 5vw, 20pt);
+  font-weight: bold;
+}
+section #lines {
+  margin: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section #lines a {
+  cursor: pointer;
+  outline: #fff 0 solid;
+  color: #ffff;
+  display: block;
+  height: 1.8em;
+  padding: 0 1em;
+  margin: 5px 8px;
+  font-size: 16pt;
+  line-height: 1.8em;
+  font-weight: bold;
+  word-break: keep-all;
+  background-color: #fff4;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+section #lines a:hover {
+  transform: scale(1.1);
+}
+section #lines a::after {
+  content: "复制成功!";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5em;
+  color: #fff0;
+}
+section #lines .copied {
+  color: #fff0;
+  outline: #fff 5px solid;
+  transform: scale(1.3) !important;
+  z-index: 1;
+}
+section #lines .copied::after {
+  color: #ffff;
+}
+footer {
+  height: 1.4em;
+  margin-bottom: 20pt;
+  display: flex;
+  justify-content: center;
+}
+footer .content {
+  padding: 0 1em;
+  line-height: 1.4em;
+  background-color: #fff4;
+  border-radius: 0.7em;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+footer a {
+  font-weight: bold;
+}
+footer .maker {
+  font-size: 10pt;
+  text-align: center;
+}
+footer .maker::before {
+  content: "The website design by";
+}
+@media screen and (max-width: 440px) {
+  footer .maker::before {
+    content: "Design by";
+  }
+}
