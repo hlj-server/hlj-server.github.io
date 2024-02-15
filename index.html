@@ -1,71 +1,91 @@
-<!-- 内容下载自 https://free.hypixel.cn/ ，由 Guoshuyan 修改，如有侵权立即删除 -->
-<html lang="zh-cn"><head>
-    <meta charset="utf-8">
-    <title>HLJ 公益服务器</title>
-    <meta name="keywords" content="HLJ,HLJ服,HLJ服务器">
-    <meta name="description" content="我的世界服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！">
-    <link href="./favicon.ico" rel="icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎来到HLJ服务器</title>
+  <link href="./favicon.ico" rel="icon">
+  <style>
+    body {
+      background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg);
+      background-size: cover;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .server-info {
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+
+    .status-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <a class="left"><i>HLJ 服务器首页</i></a>
-        <div class="right">
-            <a href="javascript:alert("还没有做，欸嘿~")" class="hidden" style="margin-left: 30px;">
-                状态监控
-            </a>
-            <a class="pay-line" href="javascript:alert("还没有做，欸嘿~")">首页</a>
-        </div>
-    </header>
-    <section>
-        <div class="title">HLJ 服务器</div>
-        <div class="describe">使用BungeeCord端，多服务器供你游玩</div>
-        <div class="describe">生存服务器、你说我做服务器……集于一体！</div>
-        <div class="tip">⚠服务器版本：</div>
-        <div class="tip">Java版 1.12.2~1.20.1 （建议使用1.19.2以上体验更佳） </div>
-        <div class="tip">基岩版 1.120.0~1.120.10</div>
-        <nav id="lines">
-            <a class="copyButton" onclick="(copyToClipboard('cn-hk-bgp-4.openfrp.top:13463',0))">🌟Java版地址（带端口）🌟</a>
-            <a class="copyButton" onclick="(copyToClipboard('cn-hk-bgp-4.openfrp.top',1))">🆕基岩版地址🆕</a>
-            <a class="copyButton" onclick="(copyToClipboard('13464 ',2))">🆕基岩版端口🆕</a>
-            <a class="copyButton" onclick="(copyToClipboard('678365134',3))">QQ群</a>
-            <a>更多内容敬请期待</a>
-        </nav>
-    </section>
-    <footer>
-        <div class="copyright">
-            © 2024-2024
-            <a href="https://www.liteboost.cn">LiteBoost</a>
-            <center><i style="font-size: 10pt">此网站由 <a href="https://muselink.cc/quarkpixel" target="_blank">QuarkPixel</a> 设计❤️<a> Guoshuyan</a>修改✍</i></center>
-        </div>
-    </footer>
-    <script>
-        var notificating = false,
-            buttons = document.getElementsByClassName('copyButton');
-        function copyToClipboard(text, i) {
-            if (!notificating) {
-                if (window.clipboardData) {
-                    window.clipboardData.setData('text', text);
-                } else {
-                    (function (s) {
-                        document.oncopy = function (e) {
-                            e.clipboardData.setData('text', s);
-                            e.preventDefault();
-                            document.oncopy = null;
-                        }
-                    })(text);
-                    document.execCommand('Copy');
-                }
-                notificating = true;
-                buttons[i].className = "copyButton copied"
-                setTimeout(function () {
-                    notificating = false
-                    buttons[i].className = "copyButton"
-                }, 1500)
-            }
-        }
-    </script>
+  <header>
+    <h1>欢迎来到HLJ服务器</h1>
+  </header>
+  <section>
+    <h1>关于HLJ服务器</h1>
+    <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p>
+    <h1>服务器特点</h1>
+    <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p>
+    <div class="server-info">
+      <h1>加入我们</h1>
+      <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p>
+      <h2>服务器信息</h2>
+      <p>服务器名称: HLJ服务器</p>
+      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=r2aSg56yiu99a3J1hj96DdX7fxZqqvsi&jump_from=webapi&authKey=jih0gDUhs25VAA3fIOLUp+f9xbKaUktAO7gv0k99QfuC2EquP05J3ykbirM3we0v" target="_blank"><button>加入我们</button></a>
+      <button onclick="copyToClipboard('cn-yw-plc-1.openfrp.top:13463')">JAVA版端口</button>
+      <button onclick="copyToClipboard('53464')">基岩版端口</button>
+      <button onclick="copyToClipboard('shijiazhuang-5b072fbb.openfrp.top')">基岩版地址</button>
+    </div>
 
-</body><div style="all: initial;"><div style="all: initial;" id="__hcfy__"></div></div></html>
+    <button class="status-button" onclick="showStatusMessage()">状态查询</button>
+  </section>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(function() {
+          alert('链接已成功复制到剪贴板！');
+        })
+        .catch(function(err) {
+          console.error('复制链接失败:', err);
+        });
+    }
+
+    function showStatusMessage() {
+      alert('未完工，请等待');
+    }
+  </script>
+</body>
+</html>
