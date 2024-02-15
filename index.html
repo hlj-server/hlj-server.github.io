@@ -10,7 +10,7 @@
   <!-- 设置样式 -->
   <style>
     body {
-      background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg);
+      background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg); /* 设置背景图片 */
       background-size: cover;
     }
     header {
@@ -19,7 +19,7 @@
       padding: 20px;
     }
     section {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.7); /* 设置背景颜色并添加透明效果 */
       padding: 20px;
       margin: 20px;
       text-align: center;
@@ -50,16 +50,21 @@
 </head>
 <body>
   <header>
-    <h1>欢迎来到HLJ服务器</h1>
+    <h1>欢迎来到HLJ服务器</h1> <!-- 页面标题 -->
   </header>
   <section>
-    <h1>关于HLJ服务器</h1>
-    <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p>
-    <h1>服务器特点</h1>
-    <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p>
+    <h1>关于HLJ服务器</h1> <!-- 小标题：关于HLJ服务器 -->
+    <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p> <!-- 服务器简介内容 -->
+    <h1>服务器特点</h1> <!-- 小标题：服务器特点 -->
+    <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p> <!-- 服务器特点内容 -->
     <div class="server-info">
-      <h1>加入我们</h1>
-      <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p>
+      <h1>服务器信息</h1> <!-- 小标题：服务器信息 -->
+      <p>适配JAVA 1.12.2~1.20.1(1.18.2体验更佳)</p> <!-- 服务器适配的Java版本信息 -->
+      <p>适配基岩版 1.120.0~1.120.10</p> <!-- 服务器适配的基岩版版本信息 -->
+    </div>
+    <div class="server-info">
+      <h1>加入我们</h1> <!-- 小标题：加入我们 -->
+      <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p> <!-- 加入我们的描述内容 -->
       <button onclick="joinJava()">复制JAVA链接</button> <!-- 点击按钮复制JAVA链接到剪贴板 -->
       <button onclick="joinBedrock()">复制基岩版端口</button> <!-- 点击按钮复制基岩版端口到剪贴板 -->
       <button onclick="joinIP()">获取基岩版地址</button> <!-- 点击按钮复制基岩版地址到剪贴板 -->
@@ -74,38 +79,38 @@
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text)
         .then(function() {
-          alert('链接已成功复制到剪贴板！');
+          alert('链接已成功复制到剪贴板！'); // 复制成功提示信息
         })
         .catch(function(err) {
-          console.error('复制链接失败:', err);
+          console.error('复制链接失败:', err); // 复制失败错误信息
         });
     }
     
     // 点击按钮复制JAVA链接到剪贴板
     function joinJava() {
       setTimeout(function() {
-        copyToClipboard('cn-yw-plc-1.openfrp.top:13463');
+        copyToClipboard('cn-yw-plc-1.openfrp.top:13463'); // 复制的JAVA链接文本
       }, 500);
     }
     
     // 点击按钮复制基岩版端口到剪贴板
     function joinBedrock() {
       setTimeout(function() {
-        copyToClipboard('53464');
+        copyToClipboard('53464'); // 复制的基岩版端口文本
       }, 500);
     }
     
     // 点击按钮复制基岩版地址到剪贴板
     function joinIP() {
       setTimeout(function() {
-        copyToClipboard('shijiazhuang-5b072fbb.openfrp.top');
+        copyToClipboard('shijiazhuang-5b072fbb.openfrp.top'); // 复制的基岩版地址文本
       }, 500);
     }
     
     // 点击按钮显示状态查询消息
     function showStatusMessage() {
       setTimeout(function() {
-        alert('未完工，请等待');
+        alert('未完工，请等待'); // 状态查询提示信息
       }, 500);
     }
   </script>
