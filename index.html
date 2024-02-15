@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>欢迎来到HLJ服务器</title>
+  
+  <!-- 设置网站图标 -->
   <link href="./favicon.ico" rel="icon">
+  
+  <!-- 设置样式 -->
   <style>
+    
     /* 设置背景图片 */
     body {
       background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg);
-      background-size: cover;
+      background-size: cover; /* 背景图片铺满整个页面 */
     }
 
     /* 设置标题样式 */
@@ -20,7 +25,7 @@
 
     /* 设置内容区样式 */
     section {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.7); /* 设置半透明白色背景 */
       padding: 20px;
       margin: 20px;
       text-align: center;
@@ -42,9 +47,9 @@
 
     /* 设置状态查询按钮样式 */
     .status-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
+      position: absolute; /* 绝对定位 */
+      top: 10px; /* 距离顶部10像素 */
+      right: 10px; /* 距离右侧10像素 */
       background-color: white;
       color: black;
       padding: 10px 20px;
@@ -56,6 +61,7 @@
   </style>
 </head>
 <body>
+  
   <!-- 页面头部 -->
   <header>
     <h1>欢迎来到HLJ服务器</h1>
@@ -63,27 +69,30 @@
 
   <!-- 页面内容区域 -->
   <section>
+    
+    <!-- 关于HLJ服务器的介绍 -->
     <h1>关于HLJ服务器</h1>
     <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p>
+    
+    <!-- 服务器特点的介绍 -->
     <h1>服务器特点</h1>
     <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p>
     
     <!-- 服务器信息区域 -->
     <div class="server-info">
+      
+      <!-- 加入Java版服务器按钮 -->
       <h1>加入我们</h1>
       <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p>
-      <h2>服务器信息</h2>
-      
-      <!-- 加入Java版按钮 -->
       <button onclick="joinJava()">加入Java版</button>
       
-      <!-- 加入基岩版按钮 -->
+      <!-- 加入基岩版服务器按钮 -->
       <button onclick="joinBedrock()">加入基岩版</button>
       
       <!-- 获取服务器地址按钮 -->
       <button onclick="joinIP()">获取服务器地址</button>
 
-      <!-- 加入我们按钮 -->
+      <!-- 加入我们的QQ群 -->
       <a href="https://qm.qq.com/cgi-bin/qm/qr?k=r2aSg56yiu99a3J1hj96DdX7fxZqqvsi&jump_from=webapi&authKey=jih0gDUhs25VAA3fIOLUp+f9xbKaUktAO7gv0k99QfuC2EquP05J3ykbirM3we0v"><button>加入我们</button></a>
     </div>
 
@@ -93,43 +102,44 @@
 
   <!-- JavaScript代码 -->
   <script>
+    
     // 复制文本到剪贴板的函数
     function copyToClipboard(text) {
-      navigator.clipboard.writeText(text)
-        .then(function() {
-          alert('链接已成功复制到剪贴板！');
+      navigator.clipboard.writeText(text) // 调用浏览器API将文本复制到剪贴板
+        .then(function() { // 复制成功后执行的回调函数
+          alert('链接已成功复制到剪贴板！'); // 弹出提示框
         })
-        .catch(function(err) {
-          console.error('复制链接失败:', err);
+        .catch(function(err) { // 复制失败后执行的回调函数
+          console.error('复制链接失败:', err); // 在控制台中输出错误信息
         });
     }
 
     // 加入Java版服务器的函数
     function joinJava() {
-      setTimeout(function() {
+      setTimeout(function() { // 延迟500ms后执行
         copyToClipboard('cn-yw-plc-1.openfrp.top:13463'); // 将Java版服务器地址复制到剪贴板
-      }, 500); // 延迟500ms执行
+      }, 500);
     }
 
     // 加入基岩版服务器的函数
     function joinBedrock() {
-      setTimeout(function() {
+      setTimeout(function() { // 延迟500ms后执行
         copyToClipboard('53464'); // 将基岩版服务器端口号复制到剪贴板
-      }, 500); // 延迟500ms执行
+      }, 500);
     }
 
     // 获取服务器地址的函数
     function joinIP() {
-      setTimeout(function() {
+      setTimeout(function() { // 延迟500ms后执行
         copyToClipboard('shijiazhuang-5b072fbb.openfrp.top'); // 将服务器地址复制到剪贴板
-      }, 500); // 延迟500ms执行
+      }, 500);
     }
 
     // 显示状态查询信息的函数
     function showStatusMessage() {
-      setTimeout(function() {
+      setTimeout(function() { // 延迟500ms后执行
         alert('未完工，请等待'); // 显示状态查询信息
-      }, 500); // 延迟500ms执行
+      }, 500);
     }
   </script>
 </body>
