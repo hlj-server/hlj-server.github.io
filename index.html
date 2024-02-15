@@ -1,118 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>欢迎来到HLJ服务器</title>
-  
-  <!-- 设置网站图标 -->
-  <link href="./favicon.ico" rel="icon">
-  
-  <!-- 设置样式 -->
-  <style>
-    body {
-      background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg); /* 设置背景图片 */
-      background-size: cover;
-    }
-    header {
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-    section {
-      background-color: rgba(255, 255, 255, 0.7); /* 设置背景颜色并添加透明效果 */
-      padding: 20px;
-      margin: 20px;
-      text-align: center;
-    }
-    .server-info {
-      margin-top: 30px;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 20px;
-    }
-    .status-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: white;
-      color: black;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border: 2px solid black;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>欢迎来到HLJ服务器</h1> <!-- 页面标题 -->
-  </header>
-  <section>
-    <h1>关于HLJ服务器</h1> <!-- 小标题：关于HLJ服务器 -->
-    <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p> <!-- 服务器简介内容 -->
-    <h1>服务器特点</h1> <!-- 小标题：服务器特点 -->
-    <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p> <!-- 服务器特点内容 -->
-    <div class="server-info">
-      <h1>服务器信息</h1> <!-- 小标题：服务器信息 -->
-      <p>适配JAVA 1.12.2~1.20.1(1.18.2体验更佳)</p> <!-- 服务器适配的Java版本信息 -->
-      <p>适配基岩版 1.120.0~1.120.10</p> <!-- 服务器适配的基岩版版本信息 -->
-    </div>
-    <div class="server-info">
-      <h1>加入我们</h1> <!-- 小标题：加入我们 -->
-      <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p> <!-- 加入我们的描述内容 -->
-      <button onclick="joinJava()">复制JAVA链接</button> <!-- 点击按钮复制JAVA链接到剪贴板 -->
-      <button onclick="joinBedrock()">复制基岩版端口</button> <!-- 点击按钮复制基岩版端口到剪贴板 -->
-      <button onclick="joinIP()">获取基岩版地址</button> <!-- 点击按钮复制基岩版地址到剪贴板 -->
-      <a href="https://qm.qq.com/cgi-bin/qm/qr?k=r2aSg56yiu99a3J1hj96DdX7fxZqqvsi&jump_from=webapi&authKey=jih0gDUhs25VAA3fIOLUp+f9xbKaUktAO7gv0k99QfuC2EquP05J3ykbirM3we0v">
-        <button>加入我们</button> <!-- 点击按钮跳转到QQ群链接 -->
-      </a>
-    </div>
-    <button class="status-button" onclick="showStatusMessage()">状态查询</button> <!-- 点击按钮显示状态查询消息 -->
-  </section>
-  <script>
-    // 复制文本到剪贴板函数
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text)
-        .then(function() {
-          alert('链接已成功复制到剪贴板！'); // 复制成功提示信息
-        })
-        .catch(function(err) {
-          console.error('复制链接失败:', err); // 复制失败错误信息
-        });
-    }
-    
-    // 点击按钮复制JAVA链接到剪贴板
-    function joinJava() {
-      setTimeout(function() {
-        copyToClipboard('cn-yw-plc-1.openfrp.top:13463'); // 复制的JAVA链接文本
-      }, 500);
-    }
-    
-    // 点击按钮复制基岩版端口到剪贴板
-    function joinBedrock() {
-      setTimeout(function() {
-        copyToClipboard('53464'); // 复制的基岩版端口文本
-      }, 500);
-    }
-    
-    // 点击按钮复制基岩版地址到剪贴板
-    function joinIP() {
-      setTimeout(function() {
-        copyToClipboard('shijiazhuang-5b072fbb.openfrp.top'); // 复制的基岩版地址文本
-      }, 500);
-    }
-    
-    // 点击按钮显示状态查询消息
-    function showStatusMessage() {
-      setTimeout(function() {
-        alert('未完工，请等待'); // 状态查询提示信息
-      }, 500);
-    }
-  </script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>欢迎来到HLJ服务器</title>
+      
+      <!-- 设置网站图标 -->
+      <link href="./favicon.ico" rel="icon">
+      
+      <!-- 设置样式 -->
+      <style>
+         body {
+            background-image: url(https://g.imgtg.com/uploads/5199/65730adc2a03f.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+         }
+         header {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+         }
+         section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+         h1 {
+            margin-top: 0;
+         }
+         p {
+            line-height: 1.5;
+         }
+         .server-info {
+            margin-top: 30px;
+         }
+         button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+         }
+         .status-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>欢迎来到HLJ服务器</h1>
+      </header>
+      <section>
+         <h1>关于HLJ服务器</h1>
+         <p>我们的服务器提供多种游戏模式，包括生存、竞技等，让您尽情享受游戏乐趣。我们拥有友好的社区，举办各种活动，欢迎加入我们！</p>
+         
+         <h1>服务器特点</h1>
+         <p>HLJ服务器现已焕发新生！我们使用 BungeeCord 的服务器，只为给你带来更好的游玩体验！HLJ服务器，等待你的加入！</p>
+         
+         <div class="server-info">
+            <h1>服务器信息</h1>
+            <p>适配JAVA 1.12.2~1.20.1(1.18.2体验更佳)</p>
+            <p>适配基岩版 1.120.0~1.120.10</p>
+         </div>
+         
+         <div class="server-info">
+            <h1>加入我们</h1>
+            <p>快来加入我们的服务器，和其他玩家一起畅游游戏世界吧！</p>
+            
+            <button onclick="joinJava()">复制JAVA链接</button>
+            <button onclick="joinBedrock()">复制基岩版端口</button>
+            <button onclick="joinIP()">获取基岩版地址</button>
+            <a href="https://qm.qq.com/cgi-bin/qm/qr?k=r2aSg56yiu99a3J1hj96DdX7fxZqqvsi&jump_from=webapi&authKey=jih0gDUhs25VAA3fIOLUp+f9xbKaUktAO7gv0k99QfuC2EquP05J3ykbirM3we0v">
+               <button>加入我们</button>
+            </a>
+         </div>
+         
+         <button class="status-button" onclick="showStatusMessage()">状态查询</button>
+      </section>
+      
+      <script>
+         // 复制文本到剪贴板函数
+         function copyToClipboard(text) {
+            navigator.clipboard.writeText(text)
+               .then(function() {
+                  alert('链接已成功复制到剪贴板！');
+               })
+               .catch(function(err) {
+                  console.error('复制链接失败:', err);
+               });
+         }
+         
+         // 点击按钮复制JAVA链接到剪贴板
+         function joinJava() {
+            setTimeout(function() {
+               copyToClipboard('cn-yw-plc-1.openfrp.top:13463');
+            }, 500);
+         }
+         
+         // 点击按钮复制基岩版端口到剪贴板
+         function joinBedrock() {
+            setTimeout(function() {
+               copyToClipboard('53464');
+            }, 500);
+         }
+         
+         // 点击按钮复制基岩版地址到剪贴板
+         function joinIP() {
+            setTimeout(function() {
+               copyToClipboard('shijiazhuang-5b072fbb.openfrp.top');
+            }, 500);
+         }
+         
+         // 点击按钮显示状态查询消息
+         function showStatusMessage() {
+            setTimeout(function() {
+               alert('未完工，请等待');
+            }, 500);
+         }
+      </script>
+   </body>
 </html>
